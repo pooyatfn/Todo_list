@@ -1,0 +1,6 @@
+<h2>Are you sure you want to delete "{{ item.text }}"?</h2>
+<form method="POST">
+    {% csrf_token %}
+    <input type="submit" name="confirm" value="Yes, Delete">
+    <input type="submit" name="cancel" value="No, Cancel!">
+</form>
